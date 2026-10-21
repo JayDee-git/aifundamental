@@ -1,6 +1,8 @@
-"""Project configuration note.
-
-Configure Git's global pager with:
-	git config --global core.pager "C:/Program Files/Git/usr/bin/less.exe"
-"""
-print("Hello World !!!")
+import csv
+with open("students.csv", "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow(["Name", "Age", "Grade"])
+    writer.writerow(["Alice", 14, "8th"])
+    writer.writerow(["Bob", 15, "9th"])
+    writer.writerow(["Shubhendu", 13, "7th"])
+     
